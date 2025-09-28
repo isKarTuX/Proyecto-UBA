@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad de Buenos Aires</title>
+    <meta name="description" content="Sitio oficial de la Universidad de Buenos Aires. Carreras, investigación, ingreso UBA, posgrados y más.">
+    <link rel="stylesheet" href="uba-styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="navbar-brand">
+                    <img src="imgs/logoheader40anios.png" alt="UBA Universidad de Buenos Aires" class="logo">
+                </a>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <div class="nav-links">
+                        <a href="#" class="nav-link search-link">
+                            <i class="bi bi-search"></i>
+                        </a>
+                        <a href="#" class="nav-link menu-link" id="menu-toggle">
+                            <i class="bi bi-list"></i> MENU
+                        </a>
+                        <div class="nav-dropdown">
+                            <a href="#" class="nav-link dropdown-toggle">ES</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">EN</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-toggle" id="mobile-toggle">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Full Screen Menu Overlay -->
+    <div class="full-menu-overlay" id="full-menu">
+        <button class="menu-close" id="menu-close">
+            <i class="bi bi-x-lg"></i>
+        </button>
+        
+        <div class="menu-content">
+            <!-- Search Bar -->
+            <div class="menu-search">
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar" class="search-input">
+                    <button class="search-button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Menu Sections -->
+            <div class="menu-sections">
+                <div class="menu-column">
+                    <div class="menu-item">
+                        <h3 class="menu-title">SOBRE LA UBA</h3>
+                        <ul class="menu-submenu">
+                            <li><a href="#">Autoridades</a></li>
+                            <li><a href="#">Consejo Superior</a></li>
+                            <li><a href="#">Historia y Memoria</a></li>
+                            <li><a href="#">Museo Virtual de la UBA</a></li>
+                            <li><a href="#">Promoción de la calidad</a></li>
+                            <li><a href="#">Proyecto Misión UBA</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="menu-column">
+                    <div class="menu-item">
+                        <h3 class="menu-title">ESTUDIAR EN LA UBA</h3>
+                        <ul class="menu-submenu">
+                            <li><a href="#">Educación media</a></li>
+                            <li><a href="#">Ingresantes</a></li>
+                            <li><a href="#">Carreras de Grado</a></li>
+                            <li><a href="#">Posgrado</a></li>
+                            <li><a href="#">Estudiantes extranjeros</a></li>
+                            <li><a href="#">Programas de formación</a></li>
+                            <li><a href="#">CITEP</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="menu-column">
+                    <div class="menu-item">
+                        <h3 class="menu-title">INVESTIGACIÓN</h3>
+                        <ul class="menu-submenu">
+                            <li><a href="#">Investigación científica y tecnológica</a></li>
+                            <li><a href="#">Vinculación y transferencia tecnológica</a></li>
+                            <li><a href="#">Biblioteca virtual UBA</a></li>
+                            <li><a href="#">UBATEC</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="menu-column">
+                    <div class="menu-item">
+                        <h3 class="menu-title">COMUNIDAD UBA</h3>
+                        <ul class="menu-submenu">
+                            <li><a href="#">Deportes</a></li>
+                            <li><a href="#">E-Sport</a></li>
+                            <li><a href="#">Tutorías universitarias</a></li>
+                            <li><a href="#">Turismo</a></li>
+                            <li><a href="#">Discapacidad</a></li>
+                            <li><a href="#">Ayuda económica</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Video Slider Section -->
+        <section class="hero-section">
+            <div class="hero-slider">
+                <!-- Slide 1: Lo hiciste -->
+                <div class="hero-slide active">
+                    <div class="video-container">
+                        <video autoplay muted loop class="hero-video">
+                            <source src="videos/video-lohiciste.mp4" type="video/mp4">
+                        </video>
+                        <div class="hero-overlay">
+                            <div class="hero-content">
+                                <div class="hero-badge">—</div>
+                                <h1 class="hero-title">Lo hiciste. Lo hicimos.<br>Cuidemos lo que funciona</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2: No al Veto -->
+                <div class="hero-slide">
+                    <div class="video-container">
+                        <video muted loop class="hero-video">
+                            <source src="videos/placa-noalveto-01.mp4" type="video/mp4">
+                        </video>
+                        <div class="hero-overlay">
+                            <div class="hero-content">
+                                <div class="hero-badge">—</div>
+                                <h1 class="hero-title">No al veto.<br>Defendemos la educación pública</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Quick Access Grid -->
+        <section class="quick-access">
+            <div class="grid-container">
+                <div class="grid-item large ingreso" 
+                     style="--bg-color: #1d2554; --hover-bg: url('imgs/7EZzjiWzkwloNnXTmlPqunMGpyq3ouPta9jc6ecK.jpg');">
+                    <a href="#" class="grid-link">
+                        <h2>INGRESO UBA<br>CBC / UBAXXI</h2>
+                    </a>
+                </div>
+                
+                <div class="grid-item large facultades" 
+                     style="--bg-color: #91bde0; --hover-bg: url('imgs/Iuk5D4QDAvkob5sVQwLu79lE6HupEPx90nYRKUp8.jpg');">
+                    <a href="#" class="grid-link">
+                        <h2>FACULTADES Y CARRERAS</h2>
+                    </a>
+                </div>
+                
+                <div class="grid-item small colegios" 
+                     style="--bg-color: #bdd8ed; --hover-bg: url('imgs/NtvBBEb1xDz1KgVO9TbNubOAYq5jEo7Lbs9GboDm.jpg');">
+                    <a href="#" class="grid-link">
+                        <h2>COLEGIOS</h2>
+                    </a>
+                </div>
+                
+                <div class="grid-item small posgrados" 
+                     style="--bg-color: #fdcd8f; --hover-bg: url('imgs/oMKjEJX8eRledrOzm7RSYtZInox5HcKgaSnBQT8y.jpg');">
+                    <a href="#" class="grid-link">
+                        <h2>POSGRADOS</h2>
+                    </a>
+                </div>
+                
+                <div class="grid-item small investigacion" 
+                     style="--bg-color: #f7a600; --hover-bg: url('imgs/QCjHO2NaF8iDlfhGliACxvAhby0vCCg4cki2Fu1g.jpg');">
+                    <a href="#" class="grid-link">
+                        <h2>INVESTIGACIÓN</h2>
+                    </a>
+                </div>
+                
+                <div class="grid-item small internacionales" 
+                     style="--bg-color: #1d2554; --hover-bg: url('imgs/So7h828AC01tEkjnMOgFfahBlLrB903UX1UIbVrC.jpg');">
+                    <a href="#" class="grid-link">
+                        <h2>INTERNACIONALES</h2>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section class="community-section">
+            <div class="container">
+                <div class="community-grid">
+                    <div class="community-item">
+                        <div class="community-text" style="--bg-color: #f7a600;">
+                            <a href="#" class="community-link">
+                                <h2>COMUNIDAD UBA</h2>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="community-image">
+                            <img src="imgs/tZx7rgGq9uaAasvlK1lGpSkm1WlscIwve6cE61yl.jpg" alt="Comunidad UBA">
+                        </div>
+                    </div>
+                    
+                    <div class="community-item">
+                        <div class="community-text" style="--bg-color: #91bde0;">
+                            <a href="#" class="community-link">
+                                <h2>UNIVERSIDAD Y SOCIEDAD</h2>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="community-image">
+                            <img src="imgs/VHmQvvhSdMb9fxh3k5e4At0XS2BAnOdx7n1PcYkJ.jpg" alt="Universidad y Sociedad">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="news-section">
+            <!-- UBA Noticias Header -->
+            <div class="section-header" style="--bg-color: #1d2554;">
+                <div class="container">
+                    <div class="header-content">
+                        <h2>UBA NOTICIAS</h2>
+                        <a href="#" class="header-link">
+                            <span>VISITÁ EL PORTAL</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Featured News Slider -->
+            <div class="featured-news">
+                <div class="container">
+                    <div class="news-slider">
+                        <div class="news-slide active">
+                            <img src="imgs/Sou6NqmqcPeezNub89ZhxhDO6Xci1nfGaiRxclk9.jpg" alt="Noticia destacada">
+                            <div class="slide-content">
+                                <h4>Grave situación presupuestaria</h4>
+                                <h3>
+                                    <a href="#">LA UBA COMENZÓ A IMPLEMENTAR MEDIDAS CRÍTICAS PARA GARANTIZAR SU FUNCIONAMIENTO HASTA FIN DE AÑO</a>
+                                </h3>
+                                <p>Luego del anuncio realizado el jueves pasado por el rector Ricardo Gelpi, en el que señaló que la Universidad de Buenos Aires funcionará en "estado crítico", se dieron a conocer ahora un conjunto de medidas de emergencia destinadas a sostener las actividades hasta fin de año.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="news-slide">
+                            <img src="imgs/WinpAOvN6NMBPT8tHiFltrvz8NmHyktV4ngNu59S.jpg" alt="Investigación UBA">
+                            <div class="slide-content">
+                                <h4>Investigación y Desarrollo</h4>
+                                <h3>
+                                    <a href="#">LA UBA LIDERA PROYECTOS DE INVESTIGACIÓN CIENTÍFICA Y TECNOLÓGICA</a>
+                                </h3>
+                                <p>La Universidad de Buenos Aires continúa siendo un referente en investigación científica, desarrollando proyectos innovadores que contribuyen al avance del conocimiento y la solución de problemas sociales.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- News Cards -->
+            <div class="container">
+                <div class="news-grid">
+                    <article class="news-card">
+                        <div class="card-header" style="--bg-color: #f7a600;">
+                            <h3>Institucionales</h3>
+                        </div>
+                        <img src="imgs/w7rA6dTuJURpCf6n1UIQzjEXRwDRc4VuaaKZi15E.jpg" alt="Noticia institucional">
+                        <div class="card-content">
+                            <span class="card-tag">Cuidemos lo que funciona</span>
+                            <h4><a href="#">LA UBA SOLICITA A SENADORES LA INSISTENCIA DE LA LEY DE FINANCIAMIENTO UNIVERSITARIO</a></h4>
+                            <p>El Consejo Superior de la Universidad de Buenos Aires solicitó a la Cámara de Senadores de la Nación que insista en la aprobación de la Ley de Financiamiento de la Educación Universitaria y Recomposición del Salario.</p>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card">
+                        <div class="card-header" style="--bg-color: #fdcd8f;">
+                            <h3>Generales</h3>
+                        </div>
+                        <img src="imgs/XJ12ZJaTx7DpB1dAqr0HEJsDcRoGqPSK5lojMhQy.jpg" alt="Noticia general">
+                        <div class="card-content">
+                            <span class="card-tag">33 horas de innovación y trabajo en equipo</span>
+                            <h4><a href="#">El FIUBATÓN VUELVE A LA FACULTAD DE INGENIERÍA</a></h4>
+                            <p>El 27 y 28 de septiembre se realizará en la Facultad de Ingeniería de la UBA la 8va. edición del FIUBATÓN, la maratón de innovación organizada por el FIUBA Consulting Club.</p>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card">
+                        <div class="card-header" style="--bg-color: #91bde0;">
+                            <h3>Educación</h3>
+                        </div>
+                        <img src="imgs/tZx7rgGq9uaAasvlK1lGpSkm1WlscIwve6cE61yl.jpg" alt="Noticia educación">
+                        <div class="card-content">
+                            <span class="card-tag">Orgullo UBA</span>
+                            <h4><a href="#">UBA XXI ALCANZA RÉCORD HISTÓRICO DE INSCRIPCIONES</a></h4>
+                            <p>La Universidad de Buenos Aires, a través del Programa de cursada virtual UBA XXI, celebra un nuevo hito en su historia académica: el crecimiento sostenido de la matrícula de estudiantes.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Science Section -->
+        <section class="science-section">
+            <div class="section-header" style="--bg-color: #91bde0;">
+                <div class="container">
+                    <div class="header-content">
+                        <h2>UBA CIENCIA</h2>
+                        <a href="#" class="header-link">
+                            <span>VISITÁ EL PORTAL</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <img src="imgs/VHmQvvhSdMb9fxh3k5e4At0XS2BAnOdx7n1PcYkJ.jpg" alt="Conocé más sobre nuestra universidad">
+                    <div class="cta-overlay">
+                        <h2>¡CONOCÉ MÁS SOBRE NUESTRA UNIVERSIDAD!</h2>
+                        <a href="#" class="cta-button">VER MÁS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Graduation Support -->
+        <section class="graduation-support">
+            <div class="container">
+                <div class="support-content">
+                    <div class="support-image">
+                        <img src="imgs/w7rA6dTuJURpCf6n1UIQzjEXRwDRc4VuaaKZi15E.jpg" alt="Por más graduados">
+                    </div>
+                    <div class="support-text" style="--bg-color: #91bde0;">
+                        <a href="#" class="support-link">
+                            <h2>Por más graduad@s</h2>
+                            <p>Donar aquí<br>Para las Becas Sarmiento</p>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo -->
+            <div class="footer-logo">
+                <img src="imgs/logofooter.png" alt="UBA Universidad de Buenos Aires">
+            </div>
+            
+            <!-- Navigation Links -->
+            <div class="footer-nav">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <div class="footer-section">
+                            <a href="#" class="footer-link">SOBRE LA UBA</a>
+                            <div class="footer-divider"></div>
+                        </div>
+                        <div class="footer-section">
+                            <a href="#" class="footer-link">TRANSPARENCIA</a>
+                            <div class="footer-divider"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <div class="footer-section">
+                            <a href="#" class="footer-link">ESTUDIAR EN LA UBA</a>
+                            <div class="footer-divider"></div>
+                        </div>
+                        <div class="footer-section">
+                            <a href="#" class="footer-link">PROTOCOLO DE GÉNERO</a>
+                            <div class="footer-divider"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <div class="footer-section">
+                            <a href="#" class="footer-link">INVESTIGACIÓN</a>
+                            <div class="footer-divider"></div>
+                        </div>
+                        <div class="footer-section">
+                            <a href="#" class="footer-link">RECURSOS HUMANOS</a>
+                            <div class="footer-divider"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <div class="footer-section">
+                            <a href="#" class="footer-link">COMUNIDAD UBA</a>
+                            <div class="footer-divider"></div>
+                        </div>
+                        <div class="footer-section">
+                            <a href="#" class="footer-link">COMUNICACIÓN</a>
+                            <div class="footer-divider"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <div class="footer-section">
+                            <a href="#" class="footer-link">UNIVERSIDAD Y SOCIEDAD</a>
+                            <div class="footer-divider"></div>
+                        </div>
+                        <div class="footer-section">
+                            <a href="#" class="footer-link">CONCURSOS</a>
+                            <div class="footer-divider"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <div class="footer-section">
+                            <a href="#" class="footer-link">INTERNACIONALES</a>
+                            <div class="footer-divider"></div>
+                        </div>
+                        <div class="footer-section">
+                            <a href="#" class="footer-link">TRÁMITES UBA</a>
+                            <div class="footer-divider"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Social Links -->
+            <div class="footer-social">
+                <div class="social-content">
+                    <span class="social-text">seguinos!!!!</span>
+                    <div class="social-links">
+                        <a href="#" target="_blank" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" target="_blank" class="social-link"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" target="_blank" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" target="_blank" class="social-link"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" target="_blank" class="social-link"><i class="bi bi-youtube"></i></a>
+                        <a href="#" target="_blank" class="social-link uba-radio">UBA RADIO 87.9</a>
+                        <a href="#" target="_blank" class="social-link uba-tv">UBA WEB TV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="uba-script.js"></script>
+
+</body>
+</html>
